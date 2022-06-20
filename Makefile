@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: joaocharneca <joaocharneca@student.42.fr>  +#+  +:+       +#+         #
+#    By: jde-alme <jde-alme@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/06/19 11:01:28 by joaocharneca      #+#    #+#              #
-#    Updated: 2022/06/20 10:45:36 by joaocharneca     ###   ########.fr        #
+#    Updated: 2022/06/20 18:51:07 by jde-alme         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -53,10 +53,10 @@ LIBFT_DIR = libft
 SHARED_FILES =		handle_args.c\
 					check_args.c\
 					tab_utils.c\
-					rule_s.c\
-					rule_p.c\
-					rule_r.c\
-					rule_rr.c
+					op_s.c\
+					op_p.c\
+					op_r.c\
+					op_rr.c
 
 PUSH_SWAP_FILES =	main.c\
 					handle_sort.c\
