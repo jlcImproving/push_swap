@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: joaocharneca <joaocharneca@student.42.fr>  +#+  +:+       +#+        */
+/*   By: jde-alme <jde-alme@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/19 23:20:28 by joaocharneca      #+#    #+#             */
-/*   Updated: 2022/06/19 23:20:36 by joaocharneca     ###   ########.fr       */
+/*   Updated: 2022/06/20 21:02:03 by jde-alme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
