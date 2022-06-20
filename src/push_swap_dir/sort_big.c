@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   sort_big.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: joaocharneca <joaocharneca@student.42.fr>  +#+  +:+       +#+        */
+/*   By: jde-alme <jde-alme@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/19 11:01:28 by joaocharneca      #+#    #+#             */
-/*   Updated: 2022/06/19 21:38:15 by joaocharneca     ###   ########.fr       */
+/*   Updated: 2022/06/20 19:54:30 by jde-alme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,7 @@ void	sort_big(t_global *tab)
 {
 	int	chunk_sz;
 
-	chunk_sz = tab->a_sz / 12 + 22;
+	chunk_sz = tab->a_sz / 2;
 	push_in_chunks(tab, chunk_sz);
 	push_back_in_order(tab);
 }
