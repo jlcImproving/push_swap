@@ -46,15 +46,12 @@ For 3 numbers there are only 5 possible solutions, so a few if else its all need
 To sort 4 or 5 arguments push 1 or 2 numbers from stack `a` to `b`, making sure its left 3 arguments on `a`, now its possible sort those 3 numbers with the sort 3 function. Once sorted push back to stack `a` the numbers on stack `b`, making sure that push it in the correct positions, how? Rotating the stack with `ra` and `rra`, and push the number back when possible to push it in the correct position. After, rotate the list until the smallest number is on top.
 
 - 5 until infinity
-Using a chunk based one. Making a long history sort, dividing stack `a` into "chunks", for example:
-	- 0  ~ 19: chunk 1
-	- 20 ~ 39: chunk 2
-	- 40 ~ 59: chunk 3
-	- 60 ~ 79: chunk 4
-	- 80 ~ 99: chunk 5
+Using a chunk based one. Making a long history sort, dividing stack `a` into "chunks".
 
-Rotate stack `a` searching for numbers in chunk 1, once founded one, push it to `b`. Once all the stack is pushed, I move to the next one, and so on until stack `a` is empty.
+Rotate stack `a` searching for numbers in chunk 1, once founded one, push it to `b`. Once all the stack is pushed, move to the next one, and so on until stack `a` is empty.
 To push the elements back to stack `a` check for the bigger one, rotate with `ra` or `rra`, depending on wich one takes less moves, and push the element back, one by one, from bigger to smaller, and since they are sorted by chunks, is not need to rotate too much to find the next one.
+
+John Park use a visual explanation https://www.youtube.com/watch?v=7KW59UO55TQ
 
 ## How to use
 
@@ -105,3 +102,8 @@ make checker
 ```sh
 ARG="2 1 3 6 5 8"; ./push_swap $ARG | ./checker $ARG
 ```
+
+### push_swap_tester
+
+git clone https://github.com/LeoFu9487/push_swap_tester.git && cd push_swap_tester
+
