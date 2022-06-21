@@ -33,16 +33,16 @@ Sort stack `a`, with the help of stack `b`, using the smallest number of moves a
 
 Different aproachs depending of the size of the stack.
 
-- 1 number
+- 1 number:
 Its done!
 
-- 2 numbers
-Easy, rule `sa` if second one is bigger than the first.
+- 2 numbers:
+Operation `sa` if second one is bigger than the first.
 
-- 3 numbers
-For 3 numbers there are only 5 possible solutions, so a few if else its all needed:
+- 3 numbers:
+For 3 numbers there are only 5 possible solutions, so a few if else its all needed.
 
-- 3, 4 or 5 numbers
+- 3, 4 or 5 numbers:
 To sort 4 or 5 arguments push 1 or 2 numbers from stack `a` to `b`, making sure its left 3 arguments on `a`, now its possible sort those 3 numbers with the sort 3 function. Once sorted push back to stack `a` the numbers on stack `b`, making sure that push it in the correct positions, how? Rotating the stack with `ra` and `rra`, and push the number back when possible to push it in the correct position. After, rotate the list until the smallest number is on top.
 
 - 5 until infinity
