@@ -45,7 +45,7 @@ For 3 numbers there are only 5 possible solutions, so a few if else its all need
 - 3, 4 or 5 numbers:
 To sort 4 or 5 arguments push 1 or 2 numbers from stack `a` to `b`, making sure its left 3 arguments on `a`, now its possible sort those 3 numbers with the sort 3 function. Once sorted push back to stack `a` the numbers on stack `b`, making sure that push it in the correct positions, how? Rotating the stack with `ra` and `rra`, and push the number back when possible to push it in the correct position. After, rotate the list until the smallest number is on top.
 
-- 5 until infinity
+- 5 until infinity:
 Using a chunk based one. Making a long history sort, dividing stack `a` into "chunks".
 
 Rotate stack `a` searching for numbers in chunk 1, once founded one, push it to `b`. Once all the stack is pushed, move to the next one, and so on until stack `a` is empty.
